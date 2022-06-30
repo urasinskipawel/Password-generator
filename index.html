@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="description" content="Create a secure password to your daily needs using our generator.">
-    <meta name="keywords"
-        content="Online Passowrd Generator, Secure Password Generator, Create Strong Password ">
+    <meta name="keywords" content="Online Passowrd Generator, Secure Password Generator, Create Strong Password ">
     <meta name="author" content="John Doe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/e62f207487.js" crossorigin="anonymous"></script>
 
@@ -31,33 +34,66 @@
 
             <div class="generator-wrapper">
 
-                <div class="input-wrapper">
-                    <form action="" class="generator-form">
-                        <input type="text">
-                    </form>
-                    <div class="input-icons"></div>
-                    <span class="generator-power">Strong</span>
+                <div class="generator-form">
+                    <div class="generator-form-input">
+                        <span class="generator-form-text">qwertyuioasdfg</span>
+                    </div>
+                    <div class="generator-form-icons">
+                        <i class="fas fa-copy"></i>
+                    </div>
+                    <button class="generator-password-btn">Generate</button>
+                    <!-- <span class="generator-power">Strong</span> -->
                 </div>
 
-                <div class="generator-settings">
-                    <div class="generator-length">
-                        <p class="generator-lenght-text">Password length</p>
-                        <span class="generator-lenght-value">11</span>
-                    </div>
-                    <div class="generator-chars">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
-                        <input type="checkbox">
 
+                <div class="generator-length">
+                    <h3>Password lenght:</h3>
+                    <div class="generator-length-value">
+                        <button class="generator-length-sub">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <input type="number" value="1">
+                        <!-- <input type="range" id="range" name="range" min="0" max="50"> -->
+                        <button class="generator-length-add">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="generator-chars">
+                    <h3>Characters used:</h3>
+                    <div class="generator-chars-used">
+
+                        <div class="generator-chars-used-checkbox">
+                            <input type="checkbox" name="uppercase" checked>
+                            <label for="uppercase">ABC</label>
+                        </div>
+                        <div class="generator-chars-used-checkbox">
+                            <input type="checkbox" name="lowercase">
+                            <label for="lowercase">abc</label>
+                        </div>
+                        <div class="generator-chars-used-checkbox">
+                            <input type="checkbox" name="numbers">
+                            <label for="numbers">123</label>
+                        </div>
+                        <div class="generator-chars-used-checkbox">
+                            <input type="checkbox" name="signs">
+                            <label for="signs">!@#</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="generator-security">
+                    <h3>Password security:</h3>
+                    <div class="generator-security-status">
+                        <p>Weak</p>
+                        <i class="far fa-frown"></i>
                     </div>
                 </div>
             </div>
+
         </div>
 
-    </div>
-
-
+        <script src="app.js"></script>
 </body>
 
 </html>
