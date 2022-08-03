@@ -36,7 +36,8 @@
 
                 <div class="generator-form">
                     <div class="generator-form-input">
-                        <span class="generator-form-text">qwertyuioasdfg</span>
+                        <span class="generator-form-text">12345678901234567890</span>
+
                     </div>
                     <div class="generator-form-icons">
                         <i class="fas fa-copy"></i>
@@ -52,8 +53,7 @@
                         <button class="generator-length-sub">
                             <i class="fas fa-minus"></i>
                         </button>
-                        <input type="number" value="1">
-                        <!-- <input type="range" id="range" name="range" min="0" max="50"> -->
+                        <input value="15" type="number" min="1" max="30">
                         <button class="generator-length-add">
                             <i class="fas fa-plus"></i>
                         </button>
@@ -64,20 +64,20 @@
                     <h3>Characters used:</h3>
                     <div class="generator-chars-used">
 
-                        <div class="generator-chars-used-checkbox">
+                        <div class="generator-chars-used-checkbox upper">
                             <input type="checkbox" name="uppercase" checked>
                             <label for="uppercase">ABC</label>
                         </div>
-                        <div class="generator-chars-used-checkbox">
-                            <input type="checkbox" name="lowercase">
+                        <div class="generator-chars-used-checkbox lower">
+                            <input type="checkbox" name="lowercase" checked>
                             <label for="lowercase">abc</label>
                         </div>
-                        <div class="generator-chars-used-checkbox">
-                            <input type="checkbox" name="numbers">
+                        <div class="generator-chars-used-checkbox number">
+                            <input type="checkbox" name="numbers " checked>
                             <label for="numbers">123</label>
                         </div>
-                        <div class="generator-chars-used-checkbox">
-                            <input type="checkbox" name="signs">
+                        <div class="generator-chars-used-checkbox sign">
+                            <input type="checkbox" name="signs" checked>
                             <label for="signs">!@#</label>
                         </div>
                     </div>
@@ -85,15 +85,17 @@
                 <div class="generator-security">
                     <h3>Password security:</h3>
                     <div class="generator-security-status">
-                        <p>Weak</p>
-                        <i class="far fa-frown"></i>
+                        <p>Strong</p>
+
+
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <script src="app.js"></script>
+        <script src="../app.js"></script>
+
 </body>
 
 </html>

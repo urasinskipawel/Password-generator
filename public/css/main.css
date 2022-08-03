@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 :root {
-	--btn-border-color: rgba(5, 50, 255, 0.605);
+	--btn-border-color: rgba(5, 50, 255, 0.6);
 	--btn-border-color-hover: rgba(5, 50, 255, 0.905);
 }
 
@@ -86,6 +86,7 @@ p {
 
 .generator-form-input {
 	width: 260px;
+	height: 38px;
 	letter-spacing: 0.2px;
 	padding: 5px;
 	border-radius: 6px;
@@ -115,6 +116,7 @@ p {
 	transform: scale(1.1);
 }
 .generator-password-btn {
+	flex-basis: 100px;
 	padding: 10px 15px;
 	border-radius: 6px;
 	border: none;
@@ -133,12 +135,14 @@ p {
 .generator-length {
 	width: 90%;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: space-around;
 	align-items: center;
 	margin-bottom: 1rem;
 }
 h3 {
 	font-size: 22px;
+	margin-bottom: 0.6rem;
 	/* letter-spacing: 0.3px; */
 }
 .generator-length-value {
@@ -151,9 +155,9 @@ h3 {
 .generator-length-value input[type='number']::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 }
-.generator-length-value input[type='number'] {
+.generator-length-value input {
 	-moz-appearance: textfield;
-	width: 30px;
+	width: 40px;
 	text-align: center;
 	letter-spacing: 0.2px;
 	padding: 5px;
@@ -208,7 +212,6 @@ h3 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 0.75rem;
 	font-size: 20px;
 	/* font-weight: 400; */
 }
@@ -239,23 +242,27 @@ h3 {
 .generator-security {
 	width: 90%;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: space-around;
 	align-items: center;
 }
 .generator-security-status {
+	height: 30px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 8px;
-	padding: 6px 15px;
+	padding: 15px 15px;
 	border-radius: 6px;
-	border: none;
 	color: #fff;
-	background-color: #fe0f2f;
 }
 .generator-security-status p {
 	font-weight: 600;
 	font-size: 16px;
 }
-.fa-frown {
+.fa-meh,
+.fa-frown,
+.fa-smile,
+.fa-grin-stars {
 	font-size: 22px;
 }
