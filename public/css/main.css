@@ -7,7 +7,6 @@
 	--btn-border-color: rgba(5, 50, 255, 0.6);
 	--btn-border-color-hover: rgba(5, 50, 255, 0.905);
 }
-
 body {
 	display: flex;
 	flex-direction: column;
@@ -29,7 +28,6 @@ body {
 	width: 80%;
 	margin: 1.5rem auto;
 }
-
 .image-wrapper {
 	display: flex;
 	justify-content: center;
@@ -38,7 +36,6 @@ body {
 .image-wrapper img {
 	width: 100%;
 }
-
 h1 {
 	margin-bottom: 1rem;
 	font-size: 40px;
@@ -49,7 +46,6 @@ p {
 	font-size: 20px;
 	text-align: center;
 }
-
 .generator-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -63,7 +59,6 @@ p {
 	align-items: center;
 	margin-bottom: 1rem;
 }
-
 .generator-form-input {
 	width: 260px;
 	height: 38px;
@@ -73,7 +68,6 @@ p {
 	letter-spacing: 0.2px;
 	overflow: hidden;
 }
-
 .generator-form-icons {
 	position: relative;
 	display: flex;
@@ -81,7 +75,6 @@ p {
 	width: 26px;
 	height: 26px;
 }
-
 .fa-copy {
 	position: absolute;
 	margin-left: -25px;
@@ -108,7 +101,6 @@ p {
 	background-color: rgba(5, 50, 255, 0.705);
 	transform: scale(1.1);
 }
-
 .generator-length {
 	flex-direction: column;
 	justify-content: space-around;
@@ -130,7 +122,7 @@ h3 {
 }
 .generator-length-value input {
 	-moz-appearance: textfield;
-	width: 40px;
+	width: 48px;
 	margin: 0 0.5rem;
 	padding: 5px;
 	background-color: transparent;
@@ -145,7 +137,6 @@ h3 {
 .generator-length-value input[type='number']:focus {
 	border: 2.5px solid var(--btn-border-color-hover);
 }
-
 .generator-length-sub,
 .generator-length-add {
 	position: relative;
@@ -165,13 +156,11 @@ h3 {
 	transform: translate(-50%, -50%);
 	transition: 0.3s;
 }
-
 .generator-length-sub:hover,
 .generator-length-add:hover {
 	border: 2.5px solid var(--btn-border-color-hover);
 	transform: scale(1.1);
 }
-
 .generator-chars {
 	flex-direction: column;
 	justify-content: space-around;
@@ -179,7 +168,7 @@ h3 {
 .generator-chars-used {
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	font-size: 20px;
 }
@@ -213,11 +202,12 @@ h3 {
 }
 .generator-security-status {
 	height: 30px;
+	width: 140px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 15px 15px;
-	gap: 8px;
+	gap: 12px;
 	color: #fff;
 	border-radius: 6px;
 }
@@ -230,4 +220,75 @@ h3 {
 .fa-smile,
 .fa-grin-stars {
 	font-size: 22px;
+}
+
+/* Media queries  */
+
+@media all and (min-width: 576px) {
+	.generator-chars-used {
+		width: 70%;
+	}
+}
+@media all and (min-width: 768px) {
+	.generator-property {
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 1rem;
+	}
+	.generator-length-value {
+		margin-left: 3.3rem;
+	}
+	.generator-security-status {
+		margin-left: 1.9rem;
+	}
+	.generator-chars-used {
+		flex-wrap: wrap;
+		width: 140px;
+		gap: 15px;
+		margin-left: 56px;
+	}
+}
+@media all and (min-width: 998px) {
+	.generator {
+		display: flex;
+		max-height: 400px;
+		margin-top: 1rem;
+	}
+	.generator-wrapper {
+		justify-content: space-around;
+		margin: 1.5rem 0 1.5rem 0;
+	}
+	.generator-property {
+		width: 80%;
+	}
+	.generator-form {
+		margin-bottom: 0;
+	}
+	.generator-length,
+	.generator-chars,
+	.generator-security {
+		flex-direction: column;
+		justify-content: space-around;
+		margin-bottom: 0;
+	}
+	.generator-length-value {
+		margin-left: 0;
+	}
+	.generator-chars-used {
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+		margin-left: 0px;
+	}
+	.generator-security-status {
+		margin-left: 0;
+	}
+}
+@media all and (min-width: 1200px) {
+	.generator {
+		justify-content: center;
+	}
+	.image-wrapper {
+		flex-basis: 50%;
+	}
 }
