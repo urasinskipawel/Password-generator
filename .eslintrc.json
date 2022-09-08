@@ -11,7 +11,8 @@
 		"ecmaVersion": "latest"
 	},
 	"rules": {
-		"linebreak-style": 0,
-		"indent": 0
+		"indent": ["error", "tab"],
+		"no-tabs": ["error", { "allowIndentationTabs": true }],
+		"linebreak-style": ["error", "windows"]
 	}
 }
