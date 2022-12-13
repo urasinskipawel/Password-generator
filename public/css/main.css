@@ -6,14 +6,8 @@
 :root {
 	--btn-border-color: rgba(5, 50, 255, 0.6);
 	--btn-border-color-hover: rgba(5, 50, 255, 0.905);
-}
-body {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background: #ada996; /* fallback for old browsers */
-	background: -webkit-linear-gradient(
+	--older-browsers-bgc: #ada996; /* fallback for old browsers */
+	--new-browsers-bgc: -webkit-linear-gradient(
 		to bottom,
 		#eaeaea,
 		#dbdbdb,
@@ -21,6 +15,14 @@ body {
 		#ada996
 	); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to bottom, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+}
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: var(--older-browsers-bgc);
+	background: var(--new-browsers-bgc);
 	min-height: 100vh;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -60,6 +62,7 @@ p {
 	margin-bottom: 1rem;
 }
 .generator-form-input {
+	display: inline;
 	width: 260px;
 	height: 38px;
 	padding: 5px;
@@ -67,7 +70,13 @@ p {
 	border: 2.5px solid var(--btn-border-color);
 	letter-spacing: 0.2px;
 	overflow: hidden;
+	font-size: 18px;
 }
+.generator-form-input p {
+	line-height: 23px;
+	white-space: nowrap;
+}
+
 .generator-form-icons {
 	position: relative;
 	display: flex;
@@ -75,6 +84,7 @@ p {
 	width: 26px;
 	height: 26px;
 }
+
 .fa-copy {
 	position: absolute;
 	margin-left: -25px;

@@ -1,5 +1,5 @@
 import { pwText, securityStatusText } from './get-dom-elements.js';
-import { pwLengthNumber } from '../app.js';
+import { pwLength } from './get-dom-elements.js';
 
 const copyPassword = () => {
 	const textarea = document.createElement('textarea');
@@ -12,7 +12,9 @@ const copyPassword = () => {
 		textarea.select();
 		document.execCommand('copy');
 		textarea.remove();
-		alert(`Password copied to clipboard. Your password security level is ${securityStatusText.textContent} and has ${pwLengthNumber} chars`);
+		alert(
+			`Password copied to clipboard. Your password security level is ${securityStatusText.textContent} and has ${pwLength.value} chars`
+		);
 	}
 };
 

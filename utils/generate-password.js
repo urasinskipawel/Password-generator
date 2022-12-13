@@ -1,7 +1,8 @@
 import { generateStatus } from './generate-status.js';
 import { pwText, upperBox, lowerBox, signBox, numberBox } from './get-dom-elements.js';
-import { pwLengthNumber } from '../app.js';
 import { getUpperLetter, getLowerLetter, getNumber, getSign } from './get-random-symbols.js';
+import { validateValue } from './validate-value.js';
+import { pwLength } from './get-dom-elements.js';
 
 const generateCheckedSymbol = () => {
 	const randomArr = [];
@@ -26,7 +27,8 @@ const generatePassword = () => {
 		alert('You have to check at least one option to build the password');
 		return (pwText.innerText = '');
 	}
-	for (let i = password.length; i < pwLengthNumber; i++) {
+	validateValue(pwLength.value);
+	for (let i = password.length; i < pwLength.value; i++) {
 		password += generateCheckedSymbol();
 	}
 	generateStatus();

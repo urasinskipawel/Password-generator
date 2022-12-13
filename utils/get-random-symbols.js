@@ -1,6 +1,6 @@
 //Variables to make password
 const upperLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-const lowerLetters = upperLetters.toLowerCase();
+const lowerLetters = 'abcdefghijklmnopqrstuvwxyz';
 const numbers = '123456789';
 const signs = '~!@#$%^&*()_-+=';
 

@@ -13,6 +13,8 @@
 	"rules": {
 		"indent": ["error", "tab"],
 		"no-tabs": ["error", { "allowIndentationTabs": true }],
-		"linebreak-style": ["error", "windows"]
+		"linebreak-style": 0,
+
+		"import/no-cycle": [2, { "maxDepth": 2 }]
 	}
 }

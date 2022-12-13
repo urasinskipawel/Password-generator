@@ -1,4 +1,11 @@
-import { securityStatus, securityStatusText, upperBox, lowerBox, signBox, numberBox } from './get-dom-elements.js';
+import {
+	securityStatus,
+	securityStatusText,
+	upperBox,
+	lowerBox,
+	signBox,
+	numberBox,
+} from './get-dom-elements.js';
 import { pwLengthNumber } from '../app.js';
 
 const icon = document.createElement('i');
@@ -32,7 +39,13 @@ const generateStatus = () => {
 		pwLengthNumber <= 12
 	) {
 		addStatus('Medium', '#e1620e', 'fa-meh');
-	} else if (!upperBox.checked || !lowerBox.checked || !numberBox.checked || !signBox.checked || pwLengthNumber <= 20) {
+	} else if (
+		!upperBox.checked ||
+		!lowerBox.checked ||
+		!numberBox.checked ||
+		!signBox.checked ||
+		pwLengthNumber <= 20
+	) {
 		addStatus('Strong', '#08cc2f', 'fa-smile');
 	} else {
 		addStatus('Protected', '#0532ffe6', 'fa-grin-stars');

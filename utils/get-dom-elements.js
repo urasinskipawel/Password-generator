@@ -12,4 +12,17 @@ const signBox = document.querySelector('.sign input');
 const securityStatus = document.querySelector('.generator-security-status');
 const securityStatusText = document.querySelector('.generator-security-status p');
 
-export { pwText, copyBtn, generateBtn, subBtn, addBtn, pwLength, upperBox, lowerBox, numberBox, signBox, securityStatus, securityStatusText };
+export {
+	pwText,
+	copyBtn,
+	generateBtn,
+	subBtn,
+	addBtn,
+	pwLength,
+	upperBox,
+	lowerBox,
+	numberBox,
+	signBox,
+	securityStatus,
+	securityStatusText,
+};
