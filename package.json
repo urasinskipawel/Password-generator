@@ -2,10 +2,10 @@
 	"name": "password-generator",
 	"version": "1.0.0",
 	"description": "Simple password generator",
-	"main": "app.js",
-	"type": "module",
+	"default": "index.html",
 	"scripts": {
-		"start": "index.html"
+	  "start": "parcel index.html",
+	  "build": "parcel build index.html --dist-dir ./dist"
 	},
 	"repository": {
 		"type": "git",
@@ -30,7 +30,8 @@
 		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-import": "^2.26.0",
-		"eslint-plugin-prettier": "^4.2.1"
+		"eslint-plugin-prettier": "^4.2.1",
+		"parcel": "^2.8.2"
 	},
 	"dependencies": {
 		"@types/node": "^18.7.14"

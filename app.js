@@ -3,7 +3,6 @@ import { copyPassword } from './utils/copy-password.js';
 import { copyBtn, generateBtn, subBtn, addBtn, pwLength } from './utils/get-dom-elements.js';
 import { validateValue } from './utils/validate-value.js';
 
-// @media : change path change validation
 
 let pwLengthNumber = Number(pwLength.value);
 
