@@ -60,9 +60,9 @@ $ npm run start
 
 - Mobile view
 
-<a href="https://ibb.co/txnCGdr"><img src="https://i.ibb.co/vQfzFtn/Mobile-portrait.png" alt="Mobile-portrait" width ="175px"/></a>
-<a href="https://ibb.co/85RzDHn"><img src="https://i.ibb.co/fpK8YsV/Mobile-landscape2.png" alt="Mobile-landscape2" width ="350px" /></a>
-<a href="https://ibb.co/6vJDYHX"><img src="https://i.ibb.co/PTz1xcD/Mobile-landscape1.png" alt="Mobile-landscape1" width ="350px" /></a>
+<a href="https://ibb.co/txnCGdr"><img src="https://i.ibb.co/vQfzFtn/Mobile-portrait.png" alt="Mobile-portrait" width ="150px"/></a>
+<a href="https://ibb.co/85RzDHn"><img src="https://i.ibb.co/fpK8YsV/Mobile-landscape2.png" alt="Mobile-landscape2" width ="320px" /></a>
+<a href="https://ibb.co/6vJDYHX"><img src="https://i.ibb.co/PTz1xcD/Mobile-landscape1.png" alt="Mobile-landscape1" width ="320px" /></a>
 
 ## Ideas & Improvements <a name="ideas-improvements"/> 💡
 
