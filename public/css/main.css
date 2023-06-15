@@ -86,9 +86,8 @@ p {
 }
 
 .fa-copy {
-	position: absolute;
-	margin-left: -25px;
-	font-size: 20px;
+	margin-left: -27px;
+	font-size: 22px;
 	transition: 0.3s;
 	cursor: pointer;
 }

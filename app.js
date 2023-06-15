@@ -3,27 +3,37 @@ import { copyPassword } from './utils/copy-password.js';
 import { copyBtn, generateBtn, subBtn, addBtn, pwLength } from './utils/get-dom-elements.js';
 import { validateValue } from './utils/validate-value.js';
 
-
 let pwLengthNumber = Number(pwLength.value);
+
+const convertToNumber = value => {
+	pwLengthNumber = Number(value);
+};
+
+const assignToValue = () => {
+	pwLength.value = pwLengthNumber;
+};
 
 // Event listeners
 copyBtn.addEventListener('click', copyPassword);
 generateBtn.addEventListener('click', generatePassword);
 subBtn.addEventListener('click', () => {
-	if (pwLengthNumber <= 1) return;
 	validateValue(pwLengthNumber);
+	convertToNumber(pwLength.value);
 	pwLengthNumber -= 1;
-	pwLength.value = pwLengthNumber;
+	assignToValue();
 });
+
 addBtn.addEventListener('click', () => {
-	if (pwLengthNumber >= 30) return;
 	validateValue(pwLengthNumber);
+	convertToNumber(pwLength.value);
 	pwLengthNumber += 1;
-	pwLength.value = pwLengthNumber;
+	assignToValue();
 });
+
 pwLength.addEventListener('keyup', () => {
+	// pwLengthNumber = Number(pwLength.value);
 	validateValue(pwLengthNumber);
-	pwLengthNumber = pwLength.value;
+	convertToNumber(pwLength.value);
 });
 
 generatePassword();
