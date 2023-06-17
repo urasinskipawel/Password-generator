@@ -3,6 +3,7 @@ import { pwText, upperBox, lowerBox, signBox, numberBox } from './get-dom-elemen
 import { getUpperLetter, getLowerLetter, getNumber, getSign } from './get-random-symbols.js';
 import { validateValue } from './validate-value.js';
 import { pwLength } from './get-dom-elements.js';
+import { handleAlert } from './handle-alert.js';
 
 const generateCheckedSymbol = () => {
 	const randomArr = [];
@@ -24,7 +25,7 @@ const generateCheckedSymbol = () => {
 const generatePassword = () => {
 	let password = '';
 	if (!upperBox.checked && !lowerBox.checked && !numberBox.checked && !signBox.checked) {
-		alert('You have to check at least one option to build the password');
+		handleAlert('You have to check at least one option to build the password');
 		return (pwText.innerText = '');
 	}
 	validateValue(pwLength.value);
