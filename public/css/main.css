@@ -62,7 +62,6 @@ p {
 	margin-bottom: 1rem;
 }
 .generator-form-input {
-	display: inline;
 	width: 260px;
 	height: 38px;
 	padding: 5px;
@@ -78,15 +77,14 @@ p {
 }
 
 .generator-form-icons {
-	position: relative;
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	width: 26px;
+	width: 50px;
 	height: 26px;
 }
 
 .fa-copy {
-	margin-left: -27px;
 	font-size: 22px;
 	transition: 0.3s;
 	cursor: pointer;
@@ -96,7 +94,7 @@ p {
 }
 .generator-password-btn {
 	flex-basis: 100px;
-	padding: 10px 15px;
+	padding: 10px 10px;
 	color: #fff;
 	background-color: var(--btn-border-color);
 	border: none;
@@ -108,7 +106,7 @@ p {
 }
 .generator-password-btn:hover {
 	background-color: rgba(5, 50, 255, 0.705);
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 .generator-length {
 	flex-direction: column;
@@ -175,7 +173,7 @@ h3 {
 	justify-content: space-around;
 }
 .generator-chars-used {
-	width: 100%;
+	width: 108%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -238,6 +236,9 @@ h3 {
 	.generator-chars-used {
 		width: 70%;
 	}
+	.generator-form-icons {
+		width: 32px;
+	}
 }
 @media all and (min-width: 768px) {
 	.generator-property {
@@ -256,6 +257,10 @@ h3 {
 		width: 140px;
 		gap: 15px;
 		margin-left: 56px;
+	}
+
+	.generator-form-icons {
+		width: 32px;
 	}
 }
 @media all and (min-width: 998px) {
@@ -287,11 +292,14 @@ h3 {
 	.generator-chars-used {
 		justify-content: space-evenly;
 		align-items: center;
-		width: 100%;
+		width: 110%;
 		margin-left: 0px;
 	}
 	.generator-security-status {
 		margin-left: 0;
+	}
+	.generator-form-icons {
+		width: 50px;
 	}
 }
 @media all and (min-width: 1200px) {
