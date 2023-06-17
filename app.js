@@ -30,9 +30,8 @@ addBtn.addEventListener('click', () => {
 	assignToValue();
 });
 
-pwLength.addEventListener('keyup', () => {
-	// pwLengthNumber = Number(pwLength.value);
-	validateValue(pwLengthNumber);
+pwLength.addEventListener('keyup', e => {
+	if (e.keyCode === 13) validateValue(pwLengthNumber);
 	convertToNumber(pwLength.value);
 });
 
