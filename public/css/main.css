@@ -183,6 +183,7 @@ h3 {
 }
 .generator-chars-used-checkbox label {
 	margin-left: 3px;
+	cursor: pointer;
 }
 .generator-chars-used input[type='checkbox'] {
 	height: 16px;
