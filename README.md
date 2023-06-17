@@ -69,6 +69,6 @@ $ npm run start
 Currently, the application is at the stage of a working prototype that can be used.
 I am gradually implementing improvements and fixing bugs.
 
-The first improvement I'm going to implement is to create a "Popup Modal" to replace the messages served by the browser alert to the user.
+In the future I'm going to rewrite the application to one of the JavaScript frameworks.
 
 I am open to contact, suggestions and cooperation. If you have any ideas or encounter a problem, please email me at: uraspawel@gmail.com
